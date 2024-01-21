@@ -5,3 +5,6 @@ var
 
 
 If IsValid("date",DSLink2.Fecha_Nacimiento,"%mm/%dd/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%mm/%dd/%yyyy")  Else If IsValid("date",DSLink2.Fecha_Nacimiento,"%m/%dd/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%m/%dd/%yyyy")  Else If IsValid("date",DSLink2.Fecha_Nacimiento,"%mm/%d/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%mm/%d/%yyyy")  Else If IsValid("date",DSLink2.Fecha_Nacimiento,"%m/%d/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%m/%d/%yyyy")  Else SetNull()
+
+
+DecimalToDecimal((JulianDayFromDate (CurrentDate()) - JulianDayFromDate(var)) / 365.25, 'trunc_zero')
