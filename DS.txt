@@ -1,10 +1,18 @@
-
-
 var
 
 
+If IsValid("date",DSLink_2.Fecha_Nacimiento,"%mm/%dd/%yyyy") Then StringToDate(DSLink_2.Fecha_Nacimiento,"%mm/%dd/%yyyy")  Else If IsValid("date",DSLink_2.Fecha_Nacimiento,"%m/%dd/%yyyy") Then StringToDate(DSLink_2.Fecha_Nacimiento,"%m/%dd/%yyyy")  Else If IsValid("date",DSLink_2.Fecha_Nacimiento,"%mm/%d/%yyyy") Then StringToDate(DSLink_2.Fecha_Nacimiento,"%mm/%d/%yyyy")  Else If IsValid("date",DSLink_2.Fecha_Nacimiento,"%m/%d/%yyyy") Then StringToDate(DSLink_2.Fecha_Nacimiento,"%m/%d/%yyyy")  Else SetNull()
 
-If IsValid("date",DSLink2.Fecha_Nacimiento,"%mm/%dd/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%mm/%dd/%yyyy")  Else If IsValid("date",DSLink2.Fecha_Nacimiento,"%m/%dd/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%m/%dd/%yyyy")  Else If IsValid("date",DSLink2.Fecha_Nacimiento,"%mm/%d/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%mm/%d/%yyyy")  Else If IsValid("date",DSLink2.Fecha_Nacimiento,"%m/%d/%yyyy") Then StringToDate(DSLink2.Fecha_Nacimiento,"%m/%d/%yyyy")  Else SetNull()
+
+
+
 
 
 DecimalToDecimal((JulianDayFromDate (CurrentDate()) - JulianDayFromDate(var)) / 365.25, 'trunc_zero')
+
+
+
+
+
+
+En la salida cambiar el tipo de dato a Decimal
