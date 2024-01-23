@@ -13,6 +13,3 @@ DecimalToDecimal((JulianDayFromDate (CurrentDate()) - JulianDayFromDate(var)) / 
 
 
 
-
-
-En la salida cambiar el tipo de dato a Decimal
